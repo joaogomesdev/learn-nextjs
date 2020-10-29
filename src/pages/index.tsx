@@ -1,9 +1,15 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import { useEffect, useState } from 'react';
+import { Title } from '../styles/pages/Home';
 
 export default function Home() {
+  const [recommendedProducts, setRecommendedProducts] = useState([]);
+
+  useEffect(() => {}, []);
+
   return (
     <div>
-      <h1>Hello World</h1>
+      <Title>Hello World</Title>
     </div>
-  )
+  );
 }
